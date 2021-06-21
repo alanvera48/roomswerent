@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>RoomsWeRent</title>
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Last-Modified" content="0">
+		<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="description" content="España hotel RoomsWeRent departamentos "/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="assets/img/logo-black.png">
+	</head>
+	<body>
+		<header>
+			<div class="container-header">
+				<img src="assets/img/logo.png" alt="logo">
+				<div class="idioma">
+					<img src="../front/assets/img/espana.svg" class="español" alt="español traduccion">
+					<img src="../front/assets/img/estados-unidos-de-america.svg" alt="ingles traduccion" class="ingles">
+				</div>
+				<nav class="navbar">
+					<ul class="navbar-ul">
+						<li><a class="text-white" href="../index.html">HOME</a></li>
+						<li><a class="text-white" href="../front/habitaciones.html" id="habitaciones">HABITACIONES</a></li>
+						<li><a class="text-white" href="../front/contacto.html" id="contacto">CONTACTO</a></li>
+					</ul>
+				</nav>
+				<div class="toggle-dropdown">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+			</header><!-- /header -->
+			<main>
+				<div class="contact1">
+					<h5 class="h5_contact_1">Te gusto algo de lo que viste?</h5>
+					<span class="span_contact_1">Contacta directamente con nosotros</span>
+					<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-green-500 hover:bg-purple-600 hover:shadow-lg">
+					<a href="https://api.whatsapp.com/send?phone=+34663434302" class="a_contact_1">Contactanos!</a>
+					</button>
+				</div>
+				<div class="limpieza">
+					<div class="max-w-screen-md mx-auto p-5 form">
+						<div class="text-center mb-16">
+							<p class="text-sm leading-7 text-gray-500 font-regular uppercase">
+								Contact
+							</p>
+							<h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+							Get In <span class="text-green-500">Touch</span>
+							</h3>
+						</div>
+						
+						<form class="w-full contact-form">
+							<div class="flex flex-wrap -mx-3 mb-6">
+								<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+									<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+										First Name
+									</label>
+									<input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="nombre" id="grid-first-name" type="text" placeholder="Jane" pattern ="^[a-zA-ZÀ-ÿ\s]{1,40}$" required="" title="Must completed with letter and white space">
+								</div>
+								<div class="w-full md:w-1/2 px-3">
+									<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+										Last Name
+									</label>
+									<input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" name="apellido" pattern ="^[a-zA-ZÀ-ÿ\s]{1,40}$" required="" title="Must completed with letter and white space">
+								</div>
+							</div>
+							<div class="flex flex-wrap -mx-3 mb-6">
+								<div class="w-full px-3">
+									<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+										Email Address
+									</label>
+									<input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="********@*****.**" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required="" name="email" title="Must completed with letter and white space">
+								</div>
+							</div>
+							
+							<div class="flex flex-wrap -mx-3 mb-6">
+								<div class="w-full px-3">
+									<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+										Your Message
+									</label>
+									<textarea rows="10" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required="" title="Text must be at less 255 caracters" name="texto">
+									</textarea>
+								</div>
+								<div class="flex justify-between w-full px-3">
+									<button class="shadow bg-green-500 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded buttonSub" type="submit">
+									Send Message
+									</button>
+								</div>
+								
+							</div>
+							
+						</form>
+					</div>
+					<div class="limpieza-box">
+						<h5 class="h5_box_whasap"> O Tambien puedes contactarnos vía WhatsApp</h5>
+						<p class="p_box_whasap">Podes contactarte directamente con nosotros via Whasapp las 24hs del dia</p>
+						<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-green-500 hover:bg-purple-600 hover:shadow-lg">
+							<a href="https://api.whatsapp.com/send?phone=+34663434302">
+								<i class="fab fa-whatsapp"></i>
+								Whasapp
+							</a>
+						</button>
+					</div>
+				
+				</div>
+			</main>
+			<div class="row-up up-noActive">
+				<div class="go-top-button">
+					<i class="fas fa-chevron-up"></i>
+				</div>
+			</div>
+			<footer>
+				<p class="text-grey-300 p-footer-hab">Todos los derechos reservados © 2021 | <i class="fas fa-heart text-red-400"></i> RoomsWeRent</p>
+			</footer>
+		</body>
+		<script src="assets/js/form.js"></script>
+		<script src="assets/js/index.js"></script>
+		<script src="assets/js/idioma_contact.js"></script>
+	</html>
+
+
+	
