@@ -5,7 +5,7 @@ header
 	position: absolute 
 	background: transparent
 	z-index: 2
-	padding: 10px
+	padding: 10px 80px
 	.container-header
 		+f-row()
 		width: 100vw
@@ -23,12 +23,16 @@ header
 				margin: 0 8px
 				cursor: pointer
 		nav
-			margin-right: 20px
+			margin-right: 0px
 			transition: all ease .3s
 			ul
 				+f-row-end()
 				li
-					margin-right: 10px
+					margin-right: 1rem
+					background: none
+					border: 2px solid #FEFAE0
+					border-radius: 0px
+					padding: 5px 10px
 					a
 						text-decoration: none
 						color: #FEFAE0
@@ -39,24 +43,6 @@ header
 						font-family: 'Poppins'
 						font-style: normal
 						font-weight: 300
-						&::after
-							background: none repeat scroll 0 0 transparent
-							bottom: -6px
-							content: ""
-							display: block
-							height: 2px
-							left: 50%
-							z-index: 1
-							position: absolute
-							background: #FFFFFF
-							transition: width 0.3s ease 0s, left 0.3s ease 0s
-							width: 0%
-						&:hover
-							color: #B48246
-							&::after
-								width: 100%
-								left: 0
-								background: #B48246 
 		.toggle-dropdown
 			width: 30px
 			height: 30px
@@ -81,12 +67,12 @@ header
 
 
 @media screen and (max-width: 480px)
-	header	
+	header
+		padding: 10px 10px
 		.container-header
 			img
 				margin-top: 10px
 				width: 100px
-				margin-left: 20px
 			nav
 				width: 100%
 				height: calc(100vh*0.90)
@@ -108,6 +94,7 @@ header
 					margin: 30px 10px 10px 10px
 					li
 						margin: 5px
+						border: none
 						a
 							text-decoration: none
 							color: #F2E9E4
