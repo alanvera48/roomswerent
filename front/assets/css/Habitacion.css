@@ -1,0 +1,161 @@
+.main-room{
+    padding-top: 100px;
+    height: auto;
+    min-height: 100vh;
+}
+
+.rooms-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-1-rooms{
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.div-1-rooms:before{
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0  ;
+    width: 100%;
+    height: 100%;
+}
+
+.div-1-rooms h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    z-index: 20;
+    font-weight: bold;
+}
+
+.div-1-rooms span{
+    font-size: 1.2rem;
+    z-index: 20;
+
+}
+
+.imagen-balmes{
+    background-image: url('../img/habitaciones/Balmes, 109/9 salon.jpg');
+}
+
+.imagen-botella{
+    background-image: url('../img/habitaciones/Botella/BPS-HD-6.jpg');
+}
+
+.imagen-diagonal{
+    background-image: url('../img/habitaciones/Diagonal/ha1.jpg');
+}
+
+.imagen-ronda{
+    background-image: url('../img/habitaciones/Ronda Universitat/3.jpg');
+}
+
+.imagen-santa{
+    background-image: url('../img/habitaciones/SANTA MADRONA/BPS-HD-5.jpg');
+}
+
+
+.imagen-tamarit{
+    background-image: url('../img/habitaciones/TAMARIT/BPS-HD-3.jpg');
+}
+.box-1-rooms{
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.box-1-rooms img{ 
+    width: 40%;
+    margin-left: auto;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    width: 50%;
+}
+
+.descripcion h5{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.descripcion span{
+    color: #858484;
+    margin: 20px 0 
+}
+
+.descripcion p{
+    text-align: start;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 200;
+
+}
+
+.carrousel{
+    margin: 30px 0 
+}
+
+.map{
+    width: 100%;
+}
+
+.map div{
+    width: 100%;
+}
+
+.map  iframe{
+    width: 100%;
+    height: 40vh;
+}
+
+@media (max-width: 767px) { 
+    .box-1-rooms{
+        min-height: 70vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 30px;
+    }
+
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    width: 100%;
+}
+
+
+.box-1-rooms img{ 
+    width: 100%;
+    margin: 30px 0;
+}
+}

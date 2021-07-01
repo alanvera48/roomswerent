@@ -1,0 +1,129 @@
+.section-3{
+    background: black;
+    height: 80vh;
+}
+
+.box-section{
+    background-image: url('../img/sections/long.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.div-images{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+
+}
+.div-images img{
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+
+}
+
+.text-section3{
+    width: 40%;
+}
+
+.text-section3 h5{
+    color: #fff;
+}
+
+.text-section3 p{
+    margin-top: 20px;
+    color: rgb(141, 141, 141);
+    text-align: start;
+}
+
+.text-section3  button{
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+}
+
+.text-section3  button a{
+    color: dimgray;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .section-3{
+        background: black;
+        height: 90vh;
+    }
+    
+    .box-section{
+        background-image: url('../img/sections/long.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .div-images{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    
+    }
+    .div-images img{
+        width: 30%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80%;
+    
+    }
+    
+    .text-section3{
+        width: 90%;
+    }
+    
+    .text-section3 h5{
+        color: #fff;
+    }
+    
+    .text-section3 p{
+        margin-top: 20px;
+        color: rgb(141, 141, 141);
+        text-align: center;
+    }
+    
+    .text-section3  button{
+        margin-top: 20px;
+        padding: 8px 15px;
+        border: none;
+        outline: none;
+    }
+    
+    .text-section3  button a{
+        color: dimgray;
+        text-decoration: none;
+    }
+}
