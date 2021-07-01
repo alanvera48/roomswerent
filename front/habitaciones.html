@@ -1,171 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>RoomsWeRent</title>
-		<meta http-equiv="Expires" content="0">
-		<meta http-equiv="Last-Modified" content="0">
-		<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-		<meta http-equiv="Pragma" content="no-cache">
-		<meta name="description" content="España hotel RoomsWeRent departamentos "/>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-		<link rel="icon" type="image/png" href="assets/img/logo-black.png">
-	</head>
-	<body>
-	<header class="header-black">
-		<div class="container-header">
-			<img src="assets/img/logo.png" alt="logo">
-			<div class="idioma">
-				<img src="../front/assets/img/espana.svg" class="español" alt="español traduccion">
-				<img src="../front/assets/img/estados-unidos-de-america.svg" alt="ingles traduccion" class="ingles">
-			</div> 
-			<nav class="navbar">
-				<ul class="navbar-ul">
-					<li><a class="text-white" href="../index.html">HOME</a></li>
-					<li><a class="text-white" href="#" id="habitaciones">HABITACIONES</a></li>
-					<li><a class="text-white" href="contacto.html"  id="contacto">CONTACTO</a></li>
-				</ul>
-			</nav>
-			<div class="toggle-dropdown">
-				<i class="fas fa-bars"></i>
-			</div>
-		</div>
-	</header><!-- /header --> 	
-	<main class="main-habitaciones hab">
-		<h5 class="h5-main-habitaciones">Habitaciones</h5>
-		<div class="contenedor-habitaciones">
-			<div class="habitaciones-card card1">
-				<div class="box-hidden">
-					<h3>Balmes</h3>
-					<p class="p-balmes">Vivir en un piso compartido puede ser increíble.
-						Encuentra compañeros de piso y un lugar donde vivir
-					</p>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RoomsWeRent</title>
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="description" content="España hotel RoomsWeRent departamentos " />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/Header.css">
+	<link rel="stylesheet" href="./assets/css/Footer.css">
+	<link rel="stylesheet" href="./assets/css/Global.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="./assets/img/logo-black.png">
+	<link rel="stylesheet" href="./assets/css/Rooms.css">
+	<script src="./assets/js/jquery-3.6.0.min.js"></script>
+</head>
+<body class="">
+	<header class="navigation-wrap bg-light start-header start-style">
+		<div class="navigation-wrap bg-light start-header start-style">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="navbar navbar-expand-md navbar-light">
+							<a class="navbar-brand" href="../index.html" target="_blank"><img
+									src="./assets/img/logo-black.png" alt=""></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav ml-auto py-4 py-md-0">
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link" href="/">Home</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./habitaciones.html"
+											role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="./habitaciones/balmes.html">Balmes</a>
+											<a class="dropdown-item" href="./habitaciones/botella.html">Botella</a>
+											<a class="dropdown-item" href="./habitaciones/diagonal.html">Diagonal</a>
+											<a class="dropdown-item" href="./habitaciones/RondaUniversitat.html">Ronda Universitat</a>
+											<a class="dropdown-item" href="./habitaciones/santa.html">Santa Martona</a>
+											<a class="dropdown-item" href="./habitaciones/tamarit.html">Tamarit</a>
+										</div>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link" href="./contacto.html">Contact</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link" href="./contacto.html">Trabaja con Nosotros</a>
+									</li>
+								</ul>
+							</div>
+
+						</nav>
+					</div>
 				</div>
-				<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-purple-500 hover:bg-grey-600 hover:shadow-lg button">
-					<a href="habitaciones/balmes.html" class="a-balmes">Ver Detalle</a>
-				</button>
-			</div>
-			<div class="habitaciones-card card2">
-				<div class="box-hidden">
-					<h3>Botella</h3>
-					<p class="p-botella">Este piso ubicado en el Raval ,un barrio dinámico que ofrece exposiciones vanguardistas en el Museo de Arte Contemporáneo de Barcelona (MACBA) y el Centro de Cultura Contemporánea de Barcelona (CCCB).</p>
+	</header>
+	<main>
+		<div class="rooms-container">
+			<div class="container-im">
+			  <a  href='./habitaciones/balmes.html'>
+			  <div class="clip clip1">
+				<div class="content">
+				  <h2>Balmes</h2>
+				  <p class='text-black'>
+					Vivir en un piso compartido puede ser increíble. Encuentra
+					compañeros de piso y un lugar donde vivir
+				  </p>
 				</div>
-				<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-purple-500 hover:bg-grey-600 hover:shadow-lg button">
-					<a href="habitaciones/botella.html" class="a-botella">Ver Detalle</a>
-				</button>
-			</div>
-			<div class="habitaciones-card card3">
-				<div class="box-hidden">
-					<h3>Diagonal</h3>
-					<p class="p-diagonal">Ubicado en una de las avenidas mas bonitas e importantes de Barcelona. Si eres una persona social te encantara este piso.</p>
+			  </div>
+			  </a>
+			  <a  href='./habitaciones/botella.html'>
+			  <div class="clip clip2">
+				<div class="content">
+				  <h2>Botella</h2>
+				  <p class='text-black'>
+					Este piso ubicado en el Raval ,un barrio dinámico que ofrece
+					exposiciones vanguardistas en el Museo de Arte Contemporáneo de
+					Barcelona (MACBA) y el Centro de Cultura Contemporánea de
+					Barcelona (CCCB).
+				  </p>
 				</div>
-				<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-purple-500 hover:bg-grey-600 hover:shadow-lg button">
-					<a href="habitaciones/diagonal.html" class="a-diagonal">Ver Detalle</a>
-				</button>
-			</div>
-			<div class="habitaciones-card card4">
-				<div class="box-hidden">
-					<h3>Ronda Universitat</h3>
-					<p class="p-ronda">Ubicado en el corazón de Barcelona a metros de Plaza Cataluña, rodeado de tiendas restaurantes y bares.</p>
+			  </div>
+			  </a>
+			  <a  href='./habitaciones/diagonal.html'>
+			  <div class="clip clip3">
+				<div class="content">
+				  <h2>Diagonal</h2>
+				  <p class='text-black'>
+					Ubicado en una de las avenidas mas bonitas e importantes de
+					Barcelona. Si eres una persona social te encantara este piso.
+				  </p>
 				</div>
-				<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-purple-500 hover:bg-grey-600 hover:shadow-lg button">
-					<a href="habitaciones/RondaUniversitat.html" class="a-ronda">Ver Detalle</a>
-				</button>
-			</div>
-			<div class="habitaciones-card card5">
-				<div class="box-hidden">
-					<h3>Santa Madrona</h3>
-					<p class="p-santa">Este piso ubicado en una de las calles con nombre de patrona de Barcelona ,muy cerca del  Palau Nacional de Montjuïc, y del Museu Nacional d'Art de Catalunya, decorado al dedillo con balcon y sol todo el día.</p>
+			  </div>
+			  </a>
+			  <a  href='./habitaciones/RondaUniversitat.html'>
+			  <div class="clip clip4">
+				<div class="content">
+				  <h2>Ronda Universitat</h2>
+				  <p class='text-black'>
+					Ubicado en el corazón de Barcelona a metros de Plaza Cataluña,
+					rodeado de tiendas restaurantes y bares.
+				  </p>
 				</div>
-				<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-purple-500 hover:bg-grey-600 hover:shadow-lg button">
-					<a href="habitaciones/santa.html" class="a-santa">Ver Detalle</a>
-				</button>
-			</div>
-			<div class="habitaciones-card card6">
-				<div class="box-hidden">
-					<h3 >Tamarit</h3>
-					<p class="p-tamarit">Ubicado en el Barrio mas “hípster” de Barcelona , Sant Antoni, es un hervidero de actividad.</p>
+			  </div>
+			  </a>
+			  <a  href='./habitaciones/santa.html'>
+			  <div class="clip clip5">
+				<div class="content">
+				  <h2>Santa Madrona</h2>
+				  <p class='text-black'>
+					Este piso ubicado en una de las calles con nombre de patrona de
+					Barcelona ,muy cerca del Palau Nacional de Montjuïc, y del Museu
+					Nacional d'Art de Catalunya, decorado al dedillo con balcon y sol
+					todo el día.
+				  </p>
 				</div>
-				<button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-purple-500 hover:bg-grey-600 hover:shadow-lg button">
-					<a href="habitaciones/tamarit.html" class="a-tamarit">Ver Detalle</a>
-				</button>
-			</div>
-		</div>
-	</main>	
-	<footer class="footer-1 bg-gray-100 py-8 sm:py-12">
-		<div class="container mx-auto px-4">
-		  <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
-			<div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
-			  <h5 class="text-xl font-bold mb-6">Features</h5>
-			  <ul class="list-none footer-links">
-				<li class="mb-2">
-				  <a href="front/contacto.html" 
-				  class="border-b border-solid border-transparent 
-				  hover:border-purple-800 
-				  hover:text-purple-800">Trabaja con nosotros</a>
-				</li>
-				<li class="mb-2">
-				  <a href="#" class="border-b 
-				  border-solid border-transparent 
-				  hover:border-purple-800 
-				  hover:text-purple-800">Random feature</a>
-				</li>
-				<li class="mb-2">
-				  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Rooms</a>
-				</li>
-			  </ul>
-			</div>
-			<div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-			  <h5 class="text-xl font-bold mb-6">WeRent</h5>
-			  <ul class="list-none footer-links">
-				<li class="mb-2">
-				  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Home</a>
-				</li>
-				<li class="mb-2">
-				  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Privacy</a>
-				</li>
-			  </ul>
-			</div>
-			<div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-			  <h5 class="text-xl font-bold mb-6">Help</h5>
-			  <ul class="list-none footer-links">
-				<li class="mb-2">
-				  <a href="front/contacto.html" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
-				</li>
-				<li class="mb-2">
-				  <a href="front/contacto.html" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact Us</a>
-				</li>
-			  </ul>
+			  </div>
+			  </a>
+			  <a  href='./habitaciones/tamarit.html'>
+			  <div class="clip clip6">
+				<div class="content">
+				  <h2>Tamarit</h2>
+				  <p class='text-black'>
+					Ubicado en el Barrio mas “hípster” de Barcelona , Sant Antoni, es
+					un hervidero de actividad.
+				  </p>
+				</div>
+			  </div>
+			  </a>
 			</div>
 		  </div>
-		  <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t">
-			<div class="sm:w-full px-4 md:w-1/6">
-			  <strong>RoomsWeRent</strong>
+	</main>
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+	<footer class="bg-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="">
+						<h6 class="footer-heading text-uppercase text-white">Information</h6>
+						<ul class="list-unstyled footer-link mt-4">
+							<li><a href="">Pages</a></li>
+							<li><a href="">Our Team</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="">
+						<h6 class="footer-heading text-uppercase text-white">Ressources</h6>
+						<ul class="list-unstyled footer-link mt-4">
+							<li><a href="">Monitoring Grader </a></li>
+							<li><a href="">Term &amp; Service</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="">
+						<h6 class="footer-heading text-uppercase text-white">Help</h6>
+						<ul class="list-unstyled footer-link mt-4">
+							<li><a href="">Terms of Services</a></li>
+							<li><a href="">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="">
+						<h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+						<p class="contact-info mt-4">Contact us if need help withanything</p>
+						<p class="contact-info">+34663434302</p>
+						<div class="mt-5">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="#">
+										<i class="fab facebook footer-social-icon fa-facebook-f"></i>
+									</a>
+								</li>
+								<li class="list-inline-item"><a href="#"><i
+											class="fab twitter footer-social-icon fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i
+											class="fab google footer-social-icon fa-google"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i
+											class="fab apple footer-social-icon fa-apple"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-			  <h6 class="font-bold mb-2">Address</h6>
-			  <address class="not-italic mb-4 text-sm">
-				Spain,<br>
-				Barcelona
-			  </address>
-			</div>
-			<div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-			  <h6 class="font-bold mb-2">Copyrights</h6>
-			  <p class="mb-4 text-sm">Todos los derechos reservados <strong>©</strong> 2021<br>
-				<em>All are MIT License</em></p>
-			</div>
-			<div class="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
-			  <button class="px-4 py-2 bg-purple-800 hover:bg-purple-900 rounded text-white"><a href="front/habitaciones.html">Get Started</a></button>
-			</div>
-		  </div>
 		</div>
-	  </footer>
-	</body>
-	<script src="assets/js/index.js"></script>
-	<script src="assets/js/idioma_habitaciones.js"></script>
+		<div class="text-center mt-5">
+			<p class="footer-alt mb-0 f-14">2021 © RoomsWeRent, All Rights Reserved</p>
+		</div>
+	</footer>
+</body>
+<script src="../front/assets/js/index.js"></script>
+<script src="./assets/js/idioma.js"></script>
+
 </html>

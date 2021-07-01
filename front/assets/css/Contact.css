@@ -1,0 +1,71 @@
+.contact-main{
+    display: flex;
+    flex-direction:row ;
+    padding-top: 120px;
+}
+
+.contact-whasap{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url('../img/habitaciones/TAMARIT/main2.jpg');
+}
+
+.contact-whasap:after{
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0  ;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-whasap h5,p,button {
+    color: white;
+    z-index: 50;
+}
+
+@media (max-width: 767px) {
+    .contact-main{
+        display: flex;
+        flex-direction:column ;
+        padding-top: 120px;
+    }
+    
+    .contact-whasap{
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        background-image: url('../img/habitaciones/TAMARIT/main2.jpg');
+    }
+    
+    .contact-whasap:after{
+        content: '';
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        top: 0  ;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .contact-whasap h5,p,button {
+        color: white;
+        z-index: 50;
+    }
+
+}
